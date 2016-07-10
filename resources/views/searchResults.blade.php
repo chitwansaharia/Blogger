@@ -28,7 +28,7 @@ $('.follow-button').click(function(){
 });
 </script>
 <style>
-a:hover{
+.searchitem:hover{
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
@@ -41,7 +41,7 @@ a:hover{
 @endif
 <div class="list-group">
 @foreach($filtered as $user)
-<a style="background:#1F618D;height:120px;color:white;" href = "/userview/{{$user->id}}" class = "list-group-item">
+<a style="background:#1F618D;height:120px;color:white;" href = "/userview/{{$user->id}}" class = "list-group-item searchitem">
 <img src= "{{URL::to('/')}}\uploads\{{$user->imgsrc()}}"  class="img-thumbnail" alt="Profile Picture" style="float:left" width="100" height="100">
 <b>&nbsp;&nbsp;Name:&nbsp;</b>{{$user->name}}<br>
 <b>&nbsp;&nbsp;Email:&nbsp;</b>{{$user->email}}

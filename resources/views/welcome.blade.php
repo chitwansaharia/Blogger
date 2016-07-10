@@ -1,17 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
+<div style='position:absolute;top:0;width:100%;height:100%;background-image: url("\\background.png")'>    
 
-                <div class="panel-body">
-                    Your Application's Landing Page.
-                </div>
-            </div>
-        </div>
-    </div>
+<br><br><br><br><br><br>
+<div class="container" style="text-align:center;">
+<h1 style="font-size:1000%;">Blogger</h1>
+<h1>A terminal where you can put your thoughts and share with your friends..</h1>
+</div>
 </div>
 @endsection

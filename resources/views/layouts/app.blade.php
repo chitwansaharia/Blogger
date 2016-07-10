@@ -42,7 +42,7 @@
             
             overflow:scroll;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            opacity: 0.9;
+           
         }
         #notifynav{
             position:fixed;
@@ -55,7 +55,7 @@
                 position:fixed;
                 width:30%;
                 margin-left:945px;
-                margin-bottom:150px;
+                margin-bottom:135px;
                 min-height:1px;
             }
             .notif{
@@ -63,7 +63,8 @@
                 margin-bottom:-20px;
             }
             body{
-                background:rgba(40, 96, 144, 0.46);
+                background-image:url("\\background.png");
+                background-size: cover;
             }
             .header{
                 background:#4271BA;
@@ -71,14 +72,17 @@
             }
             #searchsuggest{
                 background:white;
-                position:fixed;
                 position:absolute;
+                position:fixed;
                 top:52px;
-                left:250px;
+                left:295px;
                 width:316px;
                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
+            }
+            .notifications:hover{
+                cursor:pointer;
             }
 
             
@@ -112,7 +116,7 @@
                 <ul class="nav navbar-nav">
                     <li><a style="color:#ffffff;" href="{{ url('/user') }}"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
                     <li><form class="form form-horizontal" method="get" action="/search"><input style="margin-top:10px;margin-bottom:-10px;" size = "40"type="text" class="form-control searchbox" name = "searchkey" placeholder="Search for your Friends"> </li>
-                    <li><button style="margin-top:10px;" type="submit" class="btn btn-info" style="background-color:#15555D;"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search</button></li></form>
+                    <li><button style="margin-top:10px;" type="submit" class="btn btn-primary" style="background-color:#15555D;"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search</button></li></form>
                 </ul>
                 @endif
 
@@ -124,7 +128,7 @@
                         <li><a style="color:#ffffff;" href="{{ url('/register') }}">Register</a></li>
                     @else
                         <li class="dropdown"><a style="color:#ffffff;" data-toggle="modal" href="#newBlog" role="button" aria-expanded="false">New Blog</a></li>
-                        <li class="dropdown"><a rel="popover" href="#" class='notifications'   aria-expanded="false"><span style="color:#ffffff;" class="glyphicon glyphicon-globe"></span>
+                        <li class="dropdown"><a class='notifications'   aria-expanded="false"><span style="color:#ffffff;" class="glyphicon glyphicon-globe"></span>
                         </a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;" role="button" aria-expanded="false">

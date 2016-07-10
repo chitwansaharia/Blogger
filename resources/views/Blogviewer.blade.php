@@ -53,7 +53,7 @@ $('.like-button').click(function(){
 <form class="form-horizontal" method="post" action="/blogs/{{$blog->id}}/comment">
 <input type="hidden" class="form-control" name="_token" value="{{ csrf_token() }}">
 <textarea class="form-control" placeholder="Add a comment" name="comment"></textarea><br>
-<button type="submit" class="btn btn-info">Comment</button>
+<button type="submit" class="btn btn-primary">Comment</button>
 </form>
 <hr>
 <h1 style="text-align:center">Comments</h1>
